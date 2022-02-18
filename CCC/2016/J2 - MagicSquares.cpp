@@ -26,23 +26,13 @@ int main() {
     int sum = row_sum[0];
 
     for (int i = 0; i < 4; i++){
-        if (sum!=row_sum[i]){
-            cout << "not magic" << endl;
-            return 0;
-        }
-    }
-
-    sum = column_sum[0];
-
-    for (int i = 0; i < 4; i++){
-        if (sum!=column_sum[i]){
+        if (sum!=row_sum[i]||sum!=column_sum[i]){
             cout << "not magic" << endl;
             return 0;
         }
     }
 
     cout << "magic" << endl;
-
 }
        
    
