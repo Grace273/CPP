@@ -41,5 +41,23 @@ int main() {
     str.replace(str.begin(), str.begin()+3, "Replace");
     cout << "After replace: " << str << endl;
 
-    
+    str= "Hello World!";
+    auto found_idx = str.find("Wo");
+    // Return index where is "Wo" in "Hello World!"
+
+    //npos (No Position) means  "until the end of the string"
+    if (found_idx != string::npos) {
+        cout << "Found at: " << found_idx << endl;
+    } else {
+        cout << "Not found!" << endl;
+    }
+
+    // Sort string
+
+    str = "defcba" ;
+    sort(str.begin(), str.end());
+    // OR
+    sort(str.begin(), str.begin()+3);
+    cout << str << endl;
+
 }

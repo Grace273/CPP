@@ -1,9 +1,9 @@
 #include <bits/stdc++.h>
 using namespace std;
 int main() {
-    int num_of_parking_spaces;
+    int num_of_parking_spaces, occupied=0;
     string day_1_parking, day_2_parking;
-    bitset <8> occupied_twice(0);
+    bitset <100> occupied_twice(0);
 
     cin >> num_of_parking_spaces >> day_1_parking >> day_2_parking;
 
@@ -12,11 +12,8 @@ int main() {
             occupied_twice[i] = 1;
         }
     }
-    for(int i = 0; i < 8; i++) {
-        if (occupied_twice[i] == 1) {
-            ++;
-        }
-    }
-    cout << occupied;
+    occupied = occupied_twice.count();
+    cout << occupied << endl;
+
     return 0;
 }
