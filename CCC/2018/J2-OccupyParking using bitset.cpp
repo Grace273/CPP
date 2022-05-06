@@ -3,7 +3,7 @@ using namespace std;
 int main() {
     int num_of_parking_spaces, occupied=0;
     string day_1_parking, day_2_parking;
-    bitset <100> occupied_twice(0);
+    bitset <100> occupied_twice(0);   //<100> is bytes
 
     cin >> num_of_parking_spaces >> day_1_parking >> day_2_parking;
 

@@ -4,13 +4,15 @@ int main() {
 
     //int doors[3]
     //int door_number[3] = {1,2,3};
-    //int height[] = {3, 6, 9};
+    int height[] = {3, 6, 9};
+    cout << "array memory size: " << sizeof(height) << endl;
+    cout << "Number of elements: " << sizeof(height)/sizeof(height[0]) << endl; // size of one int is 32 bit, sizeof shows number of bytes
     //char spell[4] = {'W', 'O', 'O', 'F'};
     //float pi[1] = {3.14};
     //string greetings[] = {"Hi", "Hello", "Hey"};
 
-    int foo[3];//  = {100, 200, 300};
-    cin >> foo[0];
+    //int foo[3];//  = {100, 200, 300};
+    //cin >> foo[0];
     
 
     //for (int i=0; i<3; i++) {
@@ -18,11 +20,12 @@ int main() {
         //cout << foo[i]<< endl;
     //}
     
-    cout << "sizeof(int): " << sizeof(int) << " sizeof(foo): " << sizeof(foo) << endl;  // size of int 32 bit 4 bytes, foo size : 12 bytes
-    cout << "array size or length: " << sizeof(foo)/sizeof(foo[0]) << endl;
+    //cout << "sizeof(int): " << sizeof(int) << " sizeof(foo): " << sizeof(foo) << endl;  // size of int 32 bit 4 bytes, foo size : 12 bytes
+    //cout << "array size or length: " << sizeof(foo)/sizeof(foo[0]) << endl;
 
   //SORT ARRAY ELEMENT 
-  sort(arr, arr + n); // Ascending Order
-  sort(arr, arr + n, greater<>()) //Descending Order
+  //sort(arr, arr + n); // Ascending Order
+  //sort(arr, arr + n, greater<>()) //Descending Order
       //start //end
+
 }

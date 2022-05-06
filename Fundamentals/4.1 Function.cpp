@@ -21,9 +21,9 @@ using namespace std;
 
 //Function with Parameters (no return value)
 
-//void my_function(string name, int age) {
-   // cout << "Name: " << name << " Age: " << age << endl;
-//}
+void my_function(string name, int age) {
+    cout << "Name: " << name << " Age: " << age << endl;
+}
 
 //int main () {
    // my_function("Alvin", 12);
